@@ -6,11 +6,13 @@
     <title>Document</title>
 
     <!-- Includiamo gli assets con la direttiva vite -->
-    @vite('resources/js/app.js')
+    @vite('resources/js/app.js');
 
 </head>
 
 <body>
-    
+    <header>
+        <h1>ciao</h1>
+    </header>
 </body>
 </html>

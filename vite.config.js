@@ -1,10 +1,7 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 
-// Import our custom CSS
-import '~resources/scss/app.scss';
-
-const path = require('path');
+import path from 'path';
 
 export default defineConfig({
     plugins: [
@@ -14,11 +11,12 @@ export default defineConfig({
         }),
     ],
 
-    // Aggiungo un alias per la cartella rescources
+    // Aggiungo un alias per la cartella resources
     resolve: {
         alias: {
+            '~resources': '/resources/',
             '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
-            '~resources': '/resources/'
+            
         }
    },
 });
