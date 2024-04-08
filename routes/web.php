@@ -23,3 +23,13 @@ Route::get('/', function () {
     return view('home', compact('comicItems'));
 
 })->name('home');
+
+Route::get('/product', function () {
+
+    $comicItems = config('db.comics');
+
+    // dd($comicItems);
+
+    return view('product', compact('comicItems'));
+
+})->name('product');
