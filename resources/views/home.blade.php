@@ -12,13 +12,19 @@
         <div id="comics">
 
             <div class="container">
+
                 <h2>current series</h2>
 
-                <div class="comic-item">
-                    Comic Item
+                <div class="comic-cont">
+                    @foreach ($comicItems as $item)
+                    <div class="comic">
+                        <img class="img-comic" src="{{ $item['thumb'] }}" alt="">
+                        <div class="comic-title">{{ $item['series'] }}</div>
+                    </div>
+                    @endforeach
                 </div>
 
-                <button>LOAD MORE</button>
+                <button class="more-button">LOAD MORE</button>
                 
             </div>
 

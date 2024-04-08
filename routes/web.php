@@ -12,10 +12,14 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+
 Route::get('/', function () {
-    $comics = config('db.fumetti');
 
-    dd('comics');
+    $comicItems = config('db.comics');
 
-    return view('home', compact('comics'));
+    // dd($comicItems);
+
+    return view('home', compact('comicItems'));
+
 })->name('home');

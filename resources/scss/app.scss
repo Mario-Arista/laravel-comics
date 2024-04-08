@@ -26,8 +26,6 @@ main {
         .container {
 
             position: relative;
-            flex-wrap: wrap;
-            gap: 40px 20px;
 
             padding: 50px 0px;
 
@@ -46,18 +44,22 @@ main {
 
             }
 
+            .comic-cont {
+                display: flex;
+                gap: 40px 20px;
+                flex-wrap: wrap;
+            }
+
             .comic {
 
-                position: relative;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                align-items: flex-start; 
             
                 width: calc(100% / 6 - 20px / 6 * 5);
                 height: 100%;
             
-                h4 {
+                .comic-title {
                     color: white;
                     text-transform: uppercase;
                     font-size: 0.8em;
@@ -75,33 +77,11 @@ main {
                     object-position: top;
                 }
             
-                .price {
-                    position: absolute;
-                    right: -5px;
-                    top: -5px;
-            
-                    padding: 2px 8px;
-            
-                    font-size: 0.9em;
-                    font-weight: bold;
-            
-                    border-radius: 8px;
-            
-                    color: white;
-                    background-color: $primary;
-                }
-            
-                span {
-            
-                    display: none;
-                }
-            
             
             }
 
-            button {
-                margin: 0 auto;
-
+            .more-button {
+                align-self: center;
                 padding: 12px;
 
                 border: $primary 1px solid;
