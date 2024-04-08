@@ -2,15 +2,15 @@
 
 #top-footer {
 
+
     width: 100%;
     
   
     background-image: url('../../img/footer-bg.jpg');
-    // background-image: url('/img/footer-bg.jpg');
-    // background-size: cover;
+    background-size: cover;
 
     .container {
-
+        display: flex;
         justify-content: space-between;
 
         position: relative;

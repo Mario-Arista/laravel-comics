@@ -7,8 +7,23 @@
 @section('content')
 
     <main>
+        <div id="bg-main"></div>
 
-        <h2>main</h2>
+        <div id="comics">
+
+            <div class="container">
+                <h2>current series</h2>
+
+                <div class="comic-item">
+                    Comic Item
+                </div>
+
+                <button>LOAD MORE</button>
+                
+            </div>
+
+        </div>
+
 
     </main>
 
