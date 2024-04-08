@@ -14,7 +14,7 @@ main {
     background-color: $sec_color;
 
     #bg-main {
-        background-image: url('../../img/jumbotron.jpg');
+        background-image: url('../img/jumbotron.jpg');
         background-size: cover;
         background-position: top;
         width: 100%;
@@ -117,4 +117,46 @@ main {
 
     }
 
+}
+
+#app-features {
+    background-color: $primary;
+    color: white;
+    width: 100%;
+
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 65px;
+      padding-top: 45px;
+      padding-bottom: 45px;
+
+      
+        .single-feature {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .img-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            height: 50px;
+
+            img {
+              height: 100%;
+              max-width: 50px;
+              
+            }
+
+          }
+
+          h3 {
+            font-size: 0.8em;
+          }
+
+        }
+    }
 }
