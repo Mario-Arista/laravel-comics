@@ -1,0 +1,143 @@
+// TOP FOOTER
+
+#top-footer {
+
+    width: 100%;
+    
+  
+    background-image: url('../../img/footer-bg.jpg');
+    // background-image: url('/img/footer-bg.jpg');
+    // background-size: cover;
+
+    .container {
+
+        justify-content: space-between;
+
+        position: relative;
+
+        padding-bottom: 40px;
+        padding-top: 40px;
+
+        overflow: hidden;
+
+        #link-row {
+
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+
+            #link-row-first {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                h3 {
+                    color: $primary;
+                    padding-bottom: 20px;
+                }
+
+                ul {
+
+                    padding: 0px;
+
+                    li {
+                        list-style-type: none;
+                        font-size: 0.7em;
+                        color: #959595;
+                        padding-bottom: 8px;
+                    }
+
+                }
+
+            }
+        }
+
+        #link-row-second {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+
+            h3 {
+                color: $primary;
+                padding-bottom: 20px;
+            }
+
+            ul {
+
+                padding: 0px;
+
+                li {
+                    list-style-type: none;
+                    font-size: 0.7em;
+                    color: #959595;
+                    padding-bottom: 8px;
+                }
+            }
+
+        }
+
+        #img-row {
+
+            position: absolute;
+            right: 0px;
+            width: 500px;
+
+            img {
+
+                width: 100%;
+            
+            }
+
+        }
+        
+    }
+}
+
+#bottom-footer {
+
+    width: 100%;
+  
+    background-color: #303030;
+  
+    padding-top: 25px;
+    padding-bottom: 25px;
+     
+    .container {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+  
+        button {
+            background-color: transparent;
+            color: white;
+  
+            padding: 12px;
+  
+            border: $primary 1px solid;
+  
+            font-size: 1em;
+            font-weight: bold;
+        }
+  
+        .social-icons {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 25px;
+    
+            span {
+                color: $primary;
+                font-weight: bold;
+                font-size: 1.1em;
+    
+            }
+        }
+    }
+  
+}
+
+
+  

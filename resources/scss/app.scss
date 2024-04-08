@@ -6,3 +6,13 @@
 
 // Import partziali CSS
 @import './partials/header';
+@import './partials/footer';
+
+
+main {
+    background-color: $primary;
+    width: 100%;
+
+    // Test
+    height: 500px;
+}
