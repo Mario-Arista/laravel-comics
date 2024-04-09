@@ -57,48 +57,102 @@
 
         </div>
 
+        <div class="info-table">
+
+            <div class="container">
+
+                <div class="first-table">
+                    <h3>Talent</h3>
+                    <table class="table">
+                        <tbody>
+                          <tr>
+                            <td>Art by:</td>
+                            <td class="my-blue-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quod incidunt maxime ea ullam. Fuga, unde, maxime, dolorem nulla quis esse asperiores exercitationem perferendis consequatur consectetur ipsam dolore pariatur possimus.</td>
+                          </tr>
+                          <tr>
+                            <td>Written by:</td>
+                            <td class="my-blue-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis quod incidunt maxime ea ullam. Fuga, unde, maxime, dolorem nulla quis esse asperiores exercitationem perferendis consequatur consectetur ipsam dolore pariatur possimus.</td>
+                          </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="second-table">
+                    <h3>Specs</h3>
+                    <table class="table">
+                        <tbody>
+                          <tr>
+                            <td>Series:</td>
+                            <td>{{ $SingleComicZero['series'] }}</td>
+                          </tr>
+                          <tr>
+                            <td>U.S. Price:</td>
+                            <td>{{ $SingleComicZero['price'] }}</td>
+                          </tr>
+                          <tr>
+                            <td>On Sale Date:</td>
+                            <td>{{ $SingleComicZero['sale_date'] }}</td>
+                          </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
         <div id="app-features-white">
 
             <div class="container">
                 
                 <div class="single-feature">
+                    <h3>DIGITAL COMICS</h3>
+
                     <div class="img-container">
                         <img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="Digital Comics">
                     </div>
                 
-                    <h3>DIGITAL COMICS</h3>
                 </div>
                 
                 <div class="single-feature">
+                    <h3>DC MERCHANDISING</h3>
+
                     <div class="img-container">
                         <img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}" alt="Digital Merchandising">
                     </div>
                 
-                    <h3>DC MERCHANDISING</h3>
                 </div>
 
                 <div class="single-feature">
+                    <h3>SUBSCRIPTIONS</h3>
+
                     <div class="img-container">
                         <img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}" alt="Digital Merchandising">
                     </div>
                 
-                    <h3>SUBSCRIPTIONS</h3>
                 </div>
 
                 <div class="single-feature">
+
+                    <h3>COMIC SHOP LOCATOR</h3>
+
                     <div class="img-container">
                         <img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}" alt="Comic Shop Locator">
                     </div>
             
-                    <h3>COMIC SHOP LOCATOR</h3>
                 </div>
                 
                 <div class="single-feature">
+                    
+                    <h3>DC POWER VISA</h3>
+
                     <div class="img-container">
                         <img src="{{ Vite::asset('resources/img/buy-dc-power-visa.svg') }}" alt="DC Power Visa">
                     </div>
-            
-                    <h3>DC POWER VISA</h3>
                 </div>
 
             </div>

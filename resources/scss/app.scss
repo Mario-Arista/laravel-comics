@@ -105,6 +105,8 @@ main {
 
 }
 
+// Sezione con icone
+
 #app-features {
     background-color: $primary;
     color: white;
@@ -152,7 +154,6 @@ main {
 
 main {
 
-    background-color: $sec_color;
 
     #bg-main {
         background-image: url('../img/jumbotron.jpg');
@@ -248,24 +249,59 @@ main {
 
 }
 
+// Sezione con la tabella
+.info-table {
+    background-color: #F6F6F6;
+    border-top: grey solid 1px;
+
+    .container {
+        display: flex;
+        gap: 40px;
+        padding-bottom: 90px;
+
+        .first-table, 
+        .second-table {
+
+            width: calc(100% / 2 - 40px / 2 * 1);
+
+            h3 {
+                font-size: 1.4em;
+                border-bottom: grey 1px solid;
+                padding-bottom: 20px;
+                padding-top: 20px;
+
+            }
+
+            .my-blue-text {
+                color: $primary;
+            }
+        }
+
+    }
+}
+
+// Sezione con icone
+
 #app-features-white {
-    background-color: white;
-    color: grey;
+
     width: 100%;
+    border-top: grey solid 1px;
+    background-color: #F6F6F6;
+    color: grey;
+
 
     .container {
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 65px;
-      padding-top: 45px;
-      padding-bottom: 45px;
 
-      
         .single-feature {
+            width: calc(100% / 5);
           display: flex;
-          align-items: center;
+          justify-content: space-between;
           gap: 10px;
+
+          border: grey 1px solid;
+          padding-top: 20px;
+          padding-bottom: 20px;
 
           .img-container {
             display: flex;
