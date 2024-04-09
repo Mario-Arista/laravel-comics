@@ -26,10 +26,10 @@ Route::get('/', function () {
 
 Route::get('/product', function () {
 
-    $comicItems = config('db.comics');
+    $SingleComicZero = config('db.comics.0');
 
-    // dd($comicItems);
+    // dd($SingleComicZero);
 
-    return view('product', compact('comicItems'));
+    return view('product', compact('SingleComicZero'));
 
 })->name('product');
