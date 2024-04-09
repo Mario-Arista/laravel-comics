@@ -11,7 +11,7 @@
 
     .container {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
 
         position: relative;
 
@@ -32,7 +32,9 @@
                 gap: 15px;
 
                 h3 {
-                    color: $primary;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: bold;
                     padding-bottom: 20px;
                 }
 
@@ -58,7 +60,9 @@
             gap: 40px;
 
             h3 {
-                color: $primary;
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
                 padding-bottom: 20px;
             }
 
@@ -90,7 +94,25 @@
             }
 
         }
-        
+        .fake-paragraph {
+
+            div {
+                font-size: 0.7em;
+                color: #959595;
+
+                a {
+                    color: $primary;
+                    text-decoration: none;
+                }
+            }
+
+            .link-cookies {
+                font-size: 0.7em;
+                color: $primary;
+                text-decoration: none;
+            }
+            
+        }
     }
 }
 

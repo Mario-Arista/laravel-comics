@@ -1,13 +1,16 @@
 <header>
     <div class="blue-header-element">
         <div class="container">
-            <div class="text">DC power Visa</div>
-            <div class="text">Additional DC Sites</div>
+            <div class="text">DC power &#8480; Visa &#174;</div>
+            <div class="text">Additional DC Sites &#10507;</div>
         </div>
     </div>
     <nav>
         <div class="container">
-            <img class="logo" src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo DC">
+            <a href="{{route('home')}}">
+                <img class="logo" src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo DC">
+            </a>
+
             <ul>
                 <li>Characters</li>
                 <li class="active">Comics</li>
@@ -20,7 +23,7 @@
                 <li>News</li>
                 <li>Shop</li>
             </ul>
-            <div>
+            <div class="search-cont">
                 <input class="header-search" type="text" placeholder="Search">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>

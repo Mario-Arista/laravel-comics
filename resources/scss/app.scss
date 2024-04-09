@@ -44,6 +44,10 @@ main {
 
             }
 
+            a {
+                text-decoration: none;
+            }
+
             .comic-cont {
                 display: flex;
                 gap: 40px 20px;
@@ -81,8 +85,10 @@ main {
             }
 
             .more-button {
-                align-self: center;
-                padding: 12px;
+                display: block;
+                margin: 0 auto;
+                padding: 10px 26px;
+                margin-top: 30px;
 
                 border: $primary 1px solid;
 

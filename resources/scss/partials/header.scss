@@ -63,10 +63,18 @@ nav {
             border-bottom: $primary 4px solid;
         }
 
-        .header-search {
-            border: none;
+        .search-cont {
+
             border-bottom: 2px solid $primary;
+
+            .header-search {
+                border: none;
+                width: 100px;
+                text-align: right;
+                
+            }
         }
+        
     }
 
 }
